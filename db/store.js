@@ -15,4 +15,5 @@ class Store {
     }
 }
 
-module.export = new Store()
+
+module.exports = new Store()

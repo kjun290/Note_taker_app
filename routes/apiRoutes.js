@@ -3,14 +3,13 @@ const path = require('path');
 const store = require('../db/store');
 
 router.get('/notes', (req, res) => {
-    // Class Store
   
-})
+
 
 store.getNotes().then((notes) => {
     return res.json(notes)
+}).catch((err) => res.status(500).JSON(err))
+
 })
 
- 
-
-modeule.exports = router;
+module.exports = router;
